@@ -1,0 +1,130 @@
+1. 投票管理员用例图
+
+
+@startuml
+left to right direction
+title 投票管理员用例图
+
+skinparam shadowing false
+skinparam packageStyle rectangle
+
+actor "投票管理员" as Manager
+
+rectangle "投票统计系统" {
+    usecase "新建投票" as UC1
+    usecase "自定义投票选项" as UC2
+    usecase "设置投票有效期" as UC3
+    usecase "查看投票规则" as UC4
+    usecase "手动关闭投票" as UC5
+    usecase "查看自己创建的投票历史" as UC6
+    usecase "查看投票统计结果" as UC7
+}
+
+Manager -- UC1
+Manager -- UC2
+Manager -- UC3
+Manager -- UC4
+Manager -- UC5
+Manager -- UC6
+Manager -- UC7
+
+note right of UC5
+只能关闭自己创建且正在进行的投票
+关闭后不再接受新的投票
+end note
+
+note right of UC7
+只能查看自己创建的投票统计
+end note
+
+@enduml
+
+2. 普通用户用例图
+
+
+
+
+@startuml
+left to right direction
+title 投票用户用例图
+
+actor "投票用户" as Voter
+
+rectangle "投票统计系统" {
+    usecase "浏览当前有效投票" as UC1
+    usecase "提交投票" as UC2
+    usecase "查看开放的投票结果" as UC3
+    usecase "查看个人投票历史" as UC4
+    usecase "查看投票规则" as UC5
+}
+
+Voter -- UC1
+Voter -- UC2
+Voter -- UC3
+Voter -- UC4
+Voter -- UC5
+
+@enduml
+
+
+3. 系统管理员用例图
+
+
+
+@startuml
+left to right direction
+title 系统管理员用例图
+
+skinparam shadowing false
+skinparam packageStyle rectangle
+
+actor "系统管理员" as Admin
+
+rectangle "投票统计系统" {
+    usecase "查看全部注册用户" as UC1
+    usecase "修改用户角色" as UC2
+    usecase "禁用用户账号" as UC3
+}
+
+Admin -- UC1
+Admin -- UC2
+Admin -- UC3
+
+note right of UC2
+支持投票用户与投票管理员角色调整
+修改后按新角色控制权限
+end note
+
+note right of UC3
+禁用账号后无法登录
+已登录用户也无法继续操作投票业务数据
+end note
+
+@enduml
+
+
+4. 游客用例图
+
+
+
+@startuml
+left to right direction
+title 游客用例图
+
+skinparam shadowing false
+skinparam packageStyle rectangle
+
+actor "游客" as Guest
+
+rectangle "投票统计系统" {
+    usecase "查看开放的投票结果" as UC1
+}
+
+Guest -- UC1
+
+note right of UC1
+仅允许查看公开的投票统计结果
+包括各选项票数及占比
+end note
+
+@enduml
