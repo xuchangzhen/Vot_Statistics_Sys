@@ -1,9 +1,243 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="第 1 页" id="_DsXQp_MI7m5xIUS4Lyt">
-    <mxGraphModel>
+  <diagram name="功能模块设计" id="vote-function-tree">
+    <mxGraphModel dx="1566" dy="1086" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1452" pageHeight="716" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="system" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=18;" value="投票统计系统" vertex="1">
+          <mxGeometry height="72" width="245" x="603.5" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=18;" value="用户与权限管理模块" vertex="1">
+          <mxGeometry height="76" width="220" x="81.5" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="em1" edge="1" parent="1" source="system" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="726" y="180" />
+              <mxPoint x="191.5" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="用&lt;br&gt;户&lt;br&gt;注&lt;br&gt;册" vertex="1">
+          <mxGeometry height="246" width="62" x="45" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em1_1" edge="1" parent="1" source="m1" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m1_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="191.5" y="365" />
+              <mxPoint x="76" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="用&lt;br&gt;户&lt;br&gt;登&lt;br&gt;录" vertex="1">
+          <mxGeometry height="246" width="62" x="122" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em1_2" edge="1" parent="1" source="m1" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m1_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="191.5" y="365" />
+              <mxPoint x="153" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="角&lt;br&gt;色&lt;br&gt;权&lt;br&gt;限&lt;br&gt;控&lt;br&gt;制" vertex="1">
+          <mxGeometry height="246" width="62" x="199" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em1_3" edge="1" parent="1" source="m1" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m1_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="191.5" y="365" />
+              <mxPoint x="230" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="账&lt;br&gt;号&lt;br&gt;状&lt;br&gt;态&lt;br&gt;管&lt;br&gt;理" vertex="1">
+          <mxGeometry height="246" width="62" x="276" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em1_4" edge="1" parent="1" source="m1" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m1_4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="191.5" y="365" />
+              <mxPoint x="307" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=18;" value="投票创建与管理模块" vertex="1">
+          <mxGeometry height="76" width="220" x="445" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="em2" edge="1" parent="1" source="system" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="726" y="180" />
+              <mxPoint x="555" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="创&lt;br&gt;建&lt;br&gt;与&lt;br&gt;编&lt;br&gt;辑&lt;br&gt;投&lt;br&gt;票" vertex="1">
+          <mxGeometry height="246" width="62" x="370" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em2_1" edge="1" parent="1" source="m2" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m2_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="365" />
+              <mxPoint x="401" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="投&lt;br&gt;票&lt;br&gt;选&lt;br&gt;项&lt;br&gt;设&lt;br&gt;置" vertex="1">
+          <mxGeometry height="246" width="62" x="473" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em2_2" edge="1" parent="1" source="m2" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="m2_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="365" />
+              <mxPoint x="504" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="投&lt;br&gt;票&lt;br&gt;发&lt;br&gt;布&lt;br&gt;申&lt;br&gt;请" vertex="1">
+          <mxGeometry height="246" width="62" x="575" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em2_4" edge="1" parent="1" source="m2" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;" target="m2_4">
+          <mxGeometry relative="1" x="0.0132" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="365" />
+              <mxPoint x="608" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="手&lt;br&gt;动&lt;br&gt;关&lt;br&gt;闭&lt;br&gt;投&lt;br&gt;票" vertex="1">
+          <mxGeometry height="246" width="62" x="678" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em2_5" edge="1" parent="1" source="m2" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m2_5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="365" />
+              <mxPoint x="709" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=18;" value="投票审核管理&lt;br&gt;模块" vertex="1">
+          <mxGeometry height="76" width="140" x="771.5" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="em3" edge="1" parent="1" source="system" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="726" y="180" />
+              <mxPoint x="841.5" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="待&lt;br&gt;审&lt;br&gt;核&lt;br&gt;投&lt;br&gt;票&lt;br&gt;查&lt;br&gt;询" vertex="1">
+          <mxGeometry height="246" width="62" x="772" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em3_1" edge="1" parent="1" source="m3" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m3_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="841.5" y="365" />
+              <mxPoint x="803" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="投&lt;br&gt;票&lt;br&gt;审&lt;br&gt;核&lt;br&gt;处&lt;br&gt;理" vertex="1">
+          <mxGeometry height="246" width="62" x="849" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em3_2" edge="1" parent="1" source="m3" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m3_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="841.5" y="365" />
+              <mxPoint x="880" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=18;" value="投票参与管理模块" vertex="1">
+          <mxGeometry height="76" width="216" x="943" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="em4" edge="1" parent="1" source="system" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="726" y="180" />
+              <mxPoint x="1051" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="投&lt;br&gt;票&lt;br&gt;浏&lt;br&gt;览" vertex="1">
+          <mxGeometry height="246" width="62" x="943" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em4_1" edge="1" parent="1" source="m4" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m4_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1051" y="365" />
+              <mxPoint x="974" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="投&lt;br&gt;票&lt;br&gt;资&lt;br&gt;格&lt;br&gt;校&lt;br&gt;验" vertex="1">
+          <mxGeometry height="246" width="62" x="1020" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em4_2" edge="1" parent="1" source="m4" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m4_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1051" y="365" />
+              <mxPoint x="1051" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="投&lt;br&gt;票&lt;br&gt;提&lt;br&gt;交" vertex="1">
+          <mxGeometry height="246" width="62" x="1097" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em4_3" edge="1" parent="1" source="m4" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m4_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1051" y="365" />
+              <mxPoint x="1128" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=18;" value="统计与历史查询模块" vertex="1">
+          <mxGeometry height="76" width="216" x="1191" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="em5" edge="1" parent="1" source="system" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="726" y="180" />
+              <mxPoint x="1299" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5_1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="票&lt;br&gt;数&lt;br&gt;与&lt;br&gt;占&lt;br&gt;比&lt;br&gt;统&lt;br&gt;计" vertex="1">
+          <mxGeometry height="246" width="62" x="1191" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em5_1" edge="1" parent="1" source="m5" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m5_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1299" y="365" />
+              <mxPoint x="1222" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5_2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="投&lt;br&gt;票&lt;br&gt;结&lt;br&gt;果&lt;br&gt;查&lt;br&gt;看" vertex="1">
+          <mxGeometry height="246" width="62" x="1268" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em5_2" edge="1" parent="1" source="m5" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m5_2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1299" y="365" />
+              <mxPoint x="1299" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#333333;fillColor=#ffffff;fontColor=#111111;strokeWidth=2;fontFamily=Arial;fontSize=22;spacing=0;" value="历&lt;br&gt;史&lt;br&gt;投&lt;br&gt;票&lt;br&gt;查&lt;br&gt;询" vertex="1">
+          <mxGeometry height="246" width="62" x="1345" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="em5_3" edge="1" parent="1" source="m5" style="edgeStyle=segmentEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#333333;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="m5_3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1299" y="365" />
+              <mxPoint x="1376" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
